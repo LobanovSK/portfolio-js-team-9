@@ -1,20 +1,9 @@
-import { initHero } from './hero.js';
-import { initAbout } from './about.js';
-import { initBenefits } from './benefits.js';
-import { initProjects } from './projects.js';
-import { initFAQ } from './faq.js';
-import { initCovers } from './covers.js';
-import { initReviews } from './reviews.js';
-import { initWorkTogether } from './work-together.js';
-
-// Инициализация всех секций после загрузки страницы
-document.addEventListener('DOMContentLoaded', () => {
-  initHero();
-  initAbout();
-  initBenefits();
-  initProjects();
-  initFAQ();
-  initCovers();
-  initReviews();
-  initWorkTogether();
-});
+import ‘./js/header’;
+import ‘./js/hero’;
+import ‘./js/about-me’;
+import ‘./js/benefits’;
+import ‘./js/projects’;
+import ‘./js/faq’;
+import ‘./js/covers’;
+import ‘./js/reviews’;
+import ‘./js/footer’;
