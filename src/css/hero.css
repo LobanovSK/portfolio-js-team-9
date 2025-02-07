@@ -1,0 +1,130 @@
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background: url('../images/hero-bg.png') center/cover no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding: 40px 20px;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 900px;
+  text-align: center;
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+  line-height: 1.1;
+}
+
+.hero-title span {
+  color: var(--accent-color);
+}
+
+.hero-footer {
+  position: absolute;
+  bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  z-index: 2;
+}
+
+.hero-social-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  padding: 0;
+}
+
+.hero-social-links li {
+  display: inline;
+}
+
+.hero-social-links a img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease-in-out;
+  filter: grayscale(100%) brightness(80%);
+}
+
+.hero-social-links a:hover img {
+  transform: scale(1.2);
+  filter: grayscale(0%) brightness(100%);
+}
+
+.hero-contact {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.hero-contact a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.hero-contact a:hover {
+  color: var(--button-hover);
+}
+
+/* Responsive Design for Hero */
+@media (min-width: 1440px) {
+  .hero-title {
+    font-size: 6rem;
+  }
+  .hero-social-links a img {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .hero-title {
+    font-size: 4rem;
+  }
+  .hero-social-links a img {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+  .hero-footer {
+    bottom: 20px;
+  }
+  .hero-social-links a img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 374px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .hero-footer {
+    bottom: 10px;
+  }
+  .hero-social-links a img {
+    width: 28px;
+    height: 28px;
+  }
+}
