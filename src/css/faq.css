@@ -120,7 +120,7 @@
     }
 } 
 
-
+/* computer */
 @media screen and (min-width:2040px){
     .item-faq.active .text-faq {
         max-width: 950px;
