@@ -1,7 +1,7 @@
 <footer class="page-footer">
   <div class="footer-container">
     <div class="footer-logo-box">
-      <a class="footer-logo" href="../index.html">
+      <a class="footer-logo" href="/portfolio-js-team-9/">
         <picture>
           <source
             srcset="
@@ -26,23 +26,30 @@
       </h2>
     </div>
     <form class="footer-form">
-      <input
-        class="footer-form-input"
-        type="email"
-        name="email"
-        placeholder="clients@gmail.com"
-        pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
-        autocomplete="off"
-        required
-      />
-      <input
-        class="footer-form-input"
-        type="text"
-        name="comments"
-        placeholder="comments"
-        autocomplete="off"
-        required
-      />
+      <div class="input-wrapper">
+        <input
+          class="footer-form-input email"
+          type="email"
+          name="email"
+          placeholder="clients@gmail.com"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          autocomplete="off"
+          required
+        />
+        <span class="text-valid">Success!</span>
+        <span class="text-invalid">Invalid email, try again</span>
+      </div>
+      <div class="input-wrapper">
+        <input
+          class="footer-form-input comment"
+          type="text"
+          name="comments"
+          placeholder="comments"
+          autocomplete="off"
+          required
+          data-maxlength="24"
+        />
+      </div>
       <button class="footer-form-btn" type="submit">Send</button>
     </form>
     <address class="footer-contacts">
@@ -61,3 +68,23 @@
     </address>
   </div>
 </footer>
+<script type="module" src="/js/footer.js"></script>
+
+<!-- Modal-window -->
+
+<div class="backdrop">
+  <div class="footer-modal">
+    <button class="footer-modal-close-btn" type="button">
+      <svg class="modal-close-icon" width="24" height="24">
+        <use href="/img/footer/footer-sprite.svg#icon-modal-close-icon"></use>
+      </svg>
+    </button>
+    <h3 class="footer-modal-title">
+      Thank you for your interest in cooperation!
+    </h3>
+    <p class="footer-modal-text">
+      The manager will contact you shortly to discuss further details and
+      opportunities for cooperation. Please stay in touch.
+    </p>
+  </div>
+</div>
