@@ -99,7 +99,11 @@
     .item-faq {
         width: calc((100% - 24px) / 2);
         border-bottom: 1px solid #FAFAFA33;
-        padding-left: 32px;
+        padding-left:20px;
+    }
+
+    .rightbord-faq{
+        border-right:1px solid #FAFAFA33;
     }
     .ul-faq {
         flex-direction: row;
