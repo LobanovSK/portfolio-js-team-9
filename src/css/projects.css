@@ -16,11 +16,7 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
-  
-  .projects_container {
-    height: 952px;
-  }
+  }  
   
   .projects_swiper {
     width: 100%;
@@ -35,7 +31,8 @@
   }
   
   .projects_swiper-wrapper {
-    height: 868px;
+    height: 812px;
+    margin-top: 56px;
     position: relative;
     width: 100%;
     z-index: 1;
@@ -192,17 +189,11 @@
   }
   
   @media screen and (min-width: 768px) {
-    .projects_container {
-        height: 1392px;
-    }
     .projects_swiper-wrapper {
       height: 1191px;
       margin-bottom: 64px;
       margin-top: 56px;
     }
-    .projects_swiper {
-        height: 1379px;
-      }
     .projects_swaper-first-part {
       width: 704px;
       height: 566px;
@@ -242,9 +233,6 @@
       margin-top: 32px;
     }
   @media screen and (min-width: 1440px) {
-    .projects_container {
-      height: 813px;
-    }
     .projects_swiper-wrapper {
       height: 625px;
       margin-top: 56px;
@@ -300,7 +288,6 @@
   
   @media screen and (max-width: 375px) {
     .projects_container {
-      height: 952px;
       margin: 0 16px 0 16px;
       min-width: 343px;
     }
