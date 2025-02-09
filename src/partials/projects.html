@@ -1,7 +1,19 @@
-<section class="projects_body" id="projects">
- <h2 class="projects_visually-hidden">PROJECTS</h2>
-    <div class="swiper mySwiper projects_swiper">
-    <div class="projects_swiper-wrapper">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+</head>
+<body class="projects_body">
+  <div class="projects_container">
+ <h2 class="projects_visually-hidden" id="projects">PROJECTS</h2>
+        <div class="projects_swiper-wrapper">
       <div class="projects_swiper-slide">
         <div class="projects_swaper-first-part">
           <ul class="projects_lang-list">
@@ -20,8 +32,8 @@
       <div class="projects_swaper-second-part">
         <div class="projects_picture-container">
           <picture>
-            <source srcset="/img/projects/read-journey.png 1x,/img/projects/read-journey@2.png 2x" media="(min-width: 768px)" width="614" height="385"> 
-            <img srcset="/img/projects/read-journey-mob@2.png 2x" src="/img/projects/read-journey-mob.png" width="311" height="195" alt="read-journey">
+            <source srcset="../img/projects/read-journey.png 1x,../img/projects/read-journey@2.png 2x" media="(min-width: 768px)" width="614" height="385"> 
+            <img srcset="../img/projects/read-journey-mob@2.png 2x" src="../img/projects/read-journey-mob.png" width="311" height="195" alt="read-journey">
           </picture>
       </div>
       </div>
@@ -44,8 +56,8 @@
       <div class="projects_swaper-second-part">
         <div class="projects_picture-container">
           <picture>
-            <source srcset="/img/projects/petlove.png 1x,/img/projects/petlove@2.png 2x" media="(min-width: 768px)" width="614" height="385"> 
-              <img srcset="/img/projects/petlove-mob@2.png 2x" src="/img/projects/petlove-mob.png" width="311" height="195" alt="petlove">
+            <source srcset="../img/projects/petlove.png 1x,../img/projects/petlove@2.png 2x" media="(min-width: 768px)" width="614" height="385"> 
+              <img srcset="../img/projects/petlove-mob@2.png 2x" src="../img/projects/petlove-mob.png" width="311" height="195" alt="petlove">
           </picture>
        </div>
       </div>
@@ -68,8 +80,8 @@
         <div class="projects_swaper-second-part">
           <div class="projects_picture-container">
             <picture>
-              <source srcset="/img/projects/vocabbuilder.png 1x,/img/projects/vocabbuilder@2.png 2x" media="(min-width: 768px)" width="614" height="385"> 
-            <img srcset="/img/projects/vocabbuilder@2.png 2x" src="/img/projects/vocabbuilder-mob.png" width="311" height="195" alt="vocabbuilder">
+              <source srcset="../img/projects/vocabbuilder.png 1x,../img/projects/vocabbuilder@2.png 2x" media="(min-width: 768px)" width="614" height="385"> 
+            <img srcset="../img/projects/vocabbuilder@2.png 2x" src="../img/projects/vocabbuilder-mob.png" width="311" height="195" alt="vocabbuilder">
             </picture>
         </div>
         </div>
@@ -77,11 +89,16 @@
     </div>
     <div class="projects_arrows">
       <svg class="projects_icon-arrow-right">
-        <use href="/img/projects/project-symbol.svg#icon-arrow-left" class="projects_arrow"></use>
+        <use href="../img/projects/project-sprite.svg#icon-arrow-left" class="projects_arrow"></use>
       </svg>
       <svg class="projects_icon-arrow-left">
-        <use href="/img/projects/project-symbol.svg#icon-arrow-right" class="projects_arrow"></use>
+        <use href="../img/projects/project-sprite.svg#icon-arrow-right" class="projects_arrow"></use>
       </svg>
     </div>
   </div>
-</section>
+    </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="../js/projects.js"></script>
+</body>
+</html>
