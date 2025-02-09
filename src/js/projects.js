@@ -1,8 +1,8 @@
 
 var swiper = new Swiper(".mySwiper", {
     navigation: {
-      nextEl: ".icon-arrow-left",
-      prevEl: ".icon-arrow-right",
+      nextEl: ".projects_icon-arrow-left",
+      prevEl: ".projects_icon-arrow-right",
     },
     keyboard: {
         enabled: true,
