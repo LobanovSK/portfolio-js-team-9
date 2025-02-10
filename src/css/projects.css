@@ -1,3 +1,6 @@
+#projects_swiper-slide{
+  display: flex;
+}
 .projects_body {
     background-color: #1c1d20;
     font-size: 14px;
@@ -18,7 +21,7 @@
     overflow: hidden;
   }  
 
-  .ProjectsSwiper{
+  .mySwiper{
     display: flex;
     overflow: hidden;
     width: 100%;
@@ -43,10 +46,6 @@
     width: 100%;
     z-index: 1;
     display: flex;
-    transition-property: transform;
-    transition-timing-function: var(--swiper-wrapper-transition-timing-function,initial);
-    box-sizing: content-box;
-    transform: translate3d(0px,0,0);
   }
   
   .projects_swiper-slide {
@@ -56,7 +55,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translate3d(0px,0,0)
   }
   .projects_swaper-first-part {
     background-color: #fafafa;
