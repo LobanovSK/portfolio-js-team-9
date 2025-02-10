@@ -17,6 +17,12 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }  
+
+  .ProjectsSwiper{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+  }
   
   .projects_swiper {
     width: 100%;
@@ -287,8 +293,7 @@
   }
   
   @media screen and (max-width: 375px) {
-    .projects_container {
-      margin: 0 16px 0 16px;
-      min-width: 343px;
+    .projects_body{
+      margin: 0 16px 0 16px
     }
   }

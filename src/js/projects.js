@@ -3,7 +3,7 @@ import Swiper from 'swiper/bundle';
 
 import 'swiper/css/bundle'
 
-var swiper = new Swiper(".mySwiper", {
+ new Swiper(".ProjectsSwiper", {
     navigation: {
       nextEl: ".project_icon-arrow-left",
       prevEl: ".projects_icon-arrow-right",
@@ -13,9 +13,8 @@ var swiper = new Swiper(".mySwiper", {
         onlyInViewport: true,
         pageUpDown:  true,
     },
-
-
     Mousewheel: {
         sensetivity: 1, 
     }
   });
+  
