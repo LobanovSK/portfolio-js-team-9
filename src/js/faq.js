@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.querySelectorAll('.btn-faq').forEach(button => {
     button.addEventListener('click', () => {
-        const item = button.closest('li.item-faq'); // Знаходимо li, який містить кнопку
+        const item = button.closest('li.item-faq'); 
         item.classList.toggle('active');
     });
 });
