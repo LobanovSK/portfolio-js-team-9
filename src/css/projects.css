@@ -167,14 +167,19 @@
     background-color: #e0373f;
   }
   
-  .projects_icon-arrow-left,
-  .projects_icon-arrow-right {
+  .projects_arrow{
     width: 24px;
     height: 24px;
+  }
+
+  .projects_icon-arrow-left,
+  .projects_icon-arrow-right {
+    background-color: #1c1d20;
     justify-content: center;
     border: 1px solid rgba(250, 250, 250, 0.5);
     border-radius: 60px;
-    padding: 14px;
+    width: 52px;
+    height: 52px;
   }
   
   .projects_arrows {
@@ -233,10 +238,19 @@
       margin: 6px 367px 0 0;
       padding: 18px 50px ;
       }
-    }
     .projects_arrows {
       gap: 20px;
       margin-top: 32px;
+    }
+    .projects_arrow{
+      width: 32px;
+      height: 32px;
+    }
+      .projects_icon-arrow-left,
+    .projects_icon-arrow-right {
+      width: 68px;
+      height: 68px;
+    }
     }
   @media screen and (min-width: 1440px) {
     .projects_swiper-wrapper {
@@ -285,11 +299,7 @@
     .See_projects-button {
       margin: 6px 367px 0 0;
     }
-    .projects_icon-arrow-left,
-    .projects_icon-arrow-right {
-      width: 32px;
-      height: 32px;
-    }
+    
   }
   
   @media screen and (max-width: 375px) {

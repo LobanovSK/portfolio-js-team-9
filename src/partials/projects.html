@@ -1,6 +1,6 @@
 <section class="projects_body" id="projects">
  <h2 class="projects_visually-hidden">PROJECTS</h2>
-    <div class="swiper ProjectsSwiper projects_swiper">
+    <div class="swiper mySwiper projects_swiper">
     <div class="projects_swiper-wrapper">
       <div class="projects_swiper-slide">
         <div class="projects_swaper-first-part">
@@ -75,13 +75,67 @@
         </div>
       </div>
     </div>
-    <div class="projects_arrows">
-      <svg class="projects_icon-arrow-right" width="24px" height="24px">
-        <use href="/img/projects/project-symbol.svg#icon-arrow-left" class="projects_arrow"></use>
+      <div class="projects_arrows">      
+      <button
+      class="projects_icon-arrow-left"
+      tabindex="0"
+      aria-label="Previous slide"
+      aria-disabled="false"
+    >
+      <svg
+        width="32"
+        height="32"
+        viewBox="0 0 32 32"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        class="projects_arrow"
+      >
+        <path
+          d="M26.6666 16H5.33325"
+          stroke="#FAFAFA"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M13.3333 8L5.33325 16L13.3333 24"
+          stroke="#FAFAFA"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
       </svg>
-      <svg class="projects_icon-arrow-left" width="24px" height="24px">
-        <use href="/img/projects/project-symbol.svg#icon-arrow-right" class="projects_arrow"></use>
+    </button>
+    <button
+      class="projects_icon-arrow-right"
+      tabindex="0"
+      aria-label="Next slide"
+      aria-disabled="false"
+    >
+      <svg
+        width="32"
+        height="32"
+        viewBox="0 0 32 32"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        class="projects_arrow"
+      >
+        <path
+          d="M5.33325 16H26.6666"
+          stroke="#FAFAFA"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M18.6667 8L26.6667 16L18.6667 24"
+          stroke="#FAFAFA"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
       </svg>
-    </div>
+    </button>
+  </div>
   </div>
 </section>
