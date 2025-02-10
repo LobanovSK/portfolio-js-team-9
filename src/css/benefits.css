@@ -80,10 +80,11 @@
   border-radius: 60px;
   color: #fafafa;
   background: #1c1d20;
+  transition: box-shadow 0.8s ease-in-out, background-color 0.8s ease-in-out;
 }
 
 .benefits-link:hover {
-  border: 1px solid #fff;
+  box-shadow: 0 0 10px #fafafa, 0 0 20px rgba(255, 255, 255, 0.5);
 }
 
 /* #endregion MOBILE */
