@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* ----------FOOTER-MOBILE----------- */
 
 .page-footer {
@@ -126,6 +130,7 @@
   width: 100px;
   height: 100px;
   border: none;
+  cursor: pointer;
   border-radius: 100%;
   background-color: #ed3b44;
   margin-top: 16px;
@@ -299,6 +304,7 @@
   padding: 0;
   border: none;
   outline: none;
+  cursor: pointer;
   background-color: transparent;
 }
 
