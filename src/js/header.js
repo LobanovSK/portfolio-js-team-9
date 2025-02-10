@@ -50,4 +50,44 @@ document.addEventListener('DOMContentLoaded', function () {
       headerDropdownMenu.classList.remove('open');
     });
   });
+  //  Scroll
+  document.querySelectorAll('a[href^="#"]').forEach(headerAnchor => {
+    headerAnchor.addEventListener('click', function (event) {
+      event.preventDefault();
+
+      const headerTargetId = this.getAttribute('href').substring(1);
+      const headerTargetSection = document.getElementById(headerTargetId);
+      if (!headerTargetSection) return;
+
+      const headerStartPosition = window.scrollY;
+      const headerTargetPosition =
+        headerTargetSection.getBoundingClientRect().top + window.scrollY;
+      const headerDistance = headerTargetPosition - headerStartPosition;
+      const headerDuration = 500;
+      let headerStartTime = null;
+
+      function headerAnimation(headerCurrentTime) {
+        if (!headerStartTime) headerStartTime = headerCurrentTime;
+        const headerTimeElapsed = headerCurrentTime - headerStartTime;
+        const headerProgress = Math.min(headerTimeElapsed / headerDuration, 1);
+
+        window.scrollTo(
+          0,
+          headerStartPosition +
+            headerDistance * headerEaseInOutQuad(headerProgress)
+        );
+
+        if (headerTimeElapsed < headerDuration) {
+          requestAnimationFrame(headerAnimation);
+        }
+      }
+
+      function headerEaseInOutQuad(t) {
+        return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+      }
+
+      requestAnimationFrame(headerAnimation);
+    });
+  });
+  // skroll
 });
