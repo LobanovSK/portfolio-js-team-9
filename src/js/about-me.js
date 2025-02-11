@@ -5,21 +5,6 @@ import Swiper from 'swiper';
 import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
-import imgDown from '../img/about-icon-down.svg';
-import imgUp from '../img/about-icon-up.svg';
-
-document.addEventListener('DOMContentLoaded', () => {
-  const iconsDown = document.querySelectorAll('.about-icon-down img');
-  const iconsUp = document.querySelectorAll('.about-icon-up img');
-
-  iconsDown.forEach(icon => {
-    icon.src = imgDown;
-  });
-
-  iconsUp.forEach(icon => {
-    icon.src = imgUp;
-  });
-});
 
 const swiper2 = new Swiper('.skills-swiper-about-me', {
   wrapperClass: 'skills-list',
@@ -67,8 +52,4 @@ new Accordion('.accordion-list', {
   duration: 600,
   showMultiple: true,
   openOnInit: [0],
-});
-
-new Accordion('.faq-accordion-container', {
-  showMultiple: true,
 });
