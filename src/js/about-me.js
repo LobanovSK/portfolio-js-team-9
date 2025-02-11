@@ -66,7 +66,6 @@ const swiper2 = new Swiper('.skills-swiper-about-me', {
 document.querySelector('.skills-btm').addEventListener('click', e => {
   swiper2.slideNext();
 });
-
 new Accordion('.accordion-list', {
   duration: 600,
   showMultiple: true,
