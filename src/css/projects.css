@@ -1,4 +1,4 @@
-#projects_swiper-slide{
+#projects_swiper-slide,#projects_swiper-slide2, #projects_swiper-slide3{
   display: flex;
 }
 .projects_body {
@@ -61,7 +61,6 @@
     height: 417px;
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
-    width: 343px;
   }
   .projects_swiper-slide img {
     display: block;
@@ -89,7 +88,6 @@
   
   .projects_swiper-slide img {
     display: block;
-    width: 100%;
     height: 100%;
     object-fit: cover;
   }
@@ -300,8 +298,3 @@
     
   }
   
-  @media screen and (max-width: 375px) {
-    .projects_body{
-      margin: 0 16px 0 16px
-    }
-  }
