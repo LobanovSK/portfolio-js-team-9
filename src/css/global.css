@@ -4,8 +4,7 @@
   --text-secondary: #b0b0b0;
   --accent-color: #ed3b44;
   --button-hover: #c62828;
-  --font-family: 'Inter', sans-serif;
-  --container-width: 1200px;
+  --font-family: "Inter", sans-serif;
   --padding-global: 20px;
 }
 
@@ -21,12 +20,6 @@ body {
   color: var(--text-primary);
   margin: 0;
   padding: 0;
-}
-
-.container {
-  max-width: var(--container-width);
-  margin: 0 auto;
-  padding: var(--padding-global);
 }
 
 h1,
@@ -50,29 +43,16 @@ a {
 }
 
 /* Responsive Design */
-@media (min-width: 1440px) {
-  .container {
-    max-width: 1376px;
-  }
-}
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 16px;
 
-@media (min-width: 768px) and (max-width: 1439px) {
-  .container {
-    max-width: 700px;
-    padding: 32px;
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding: 0 32px;
   }
-}
-
-@media (min-width: 375px) and (max-width: 767px) {
-  .container {
-    max-width: 100%;
-    padding: 32px;
-  }
-}
-
-@media (max-width: 374px) {
-  .container {
-    max-width: 100%;
-    padding: 16px;
+  @media screen and (min-width: 1440px) {
+    max-width: 1440px;
   }
 }

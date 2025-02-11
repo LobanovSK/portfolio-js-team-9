@@ -1,0 +1,454 @@
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.about-me {
+  padding-top: 64px;
+}
+
+.about-me-discr {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.discr-card {
+  border-radius: 24px;
+  max-width: 552px;
+  max-height: 200px;
+  width: 100%;
+  height: calc((100vw * 1.418) - 32px);
+  background: #242527;
+  padding: 32px;
+}
+.discr-card-img {
+  border-radius: 24px;
+  min-width: 288px;
+  max-width: 343px;
+  max-height: 500px;
+  width: 100%;
+  height: calc((100vw * 1.418) - 32px);
+  background: #242527;
+}
+.discr-text {
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #fafafa;
+  max-width: 500px;
+  height: auto;
+  /* margin-top: 32px;
+    margin-left: 32px;
+    margin-right: 32px; */
+  padding-right: 30px;
+}
+
+.discr-text .one-line {
+  white-space: nowrap;
+}
+
+.discr-text .one-line > .accent-first {
+  color: #ed3b44;
+}
+
+.discr-text .one-line > .accent-second {
+  color: rgba(250, 250, 250, 0.4);
+}
+
+.discr-img {
+  max-width: 343px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 24px;
+}
+
+/* accordion */
+
+ul.accordion-container.accordion-list {
+  max-width: 1000px;
+  width: 1000px;
+  height: auto;
+  list-style: none;
+  padding: 0;
+  /* padding-top: 12px;
+    padding-bottom: 32px; */
+  margin-top: 32px;
+}
+
+li.ac.accordion-item {
+  margin-top: 0px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.4);
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+
+h2.ac-header.accordion-header {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+  display: flex;
+  justify-content: space-between;
+  align-items: self-start;
+  font-size: 16px;
+  padding: 0;
+}
+
+.accordion-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+}
+
+button.ac-trigger.about-accordion-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.about-svg-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 100px;
+  padding: 9px;
+  width: 36px;
+  height: 36px;
+  fill: transparent;
+  stroke: #fafafa;
+  margin-left: 23px;
+  background-color: transparent;
+  transform: scale(1);
+  transition: transform 250ms linear;
+}
+
+.about-svg-icon:hover {
+  border: 1px solid #fafafa;
+  transform: scale(1.1);
+  transition: transform 250ms linear;
+}
+
+.about-icon-up,
+.about-icon-down {
+  display: block;
+}
+
+.accordion-header[aria-expanded="true"] .about-icon-up {
+  display: block;
+}
+
+.accordion-header[aria-expanded="true"] .about-icon-down {
+  display: none;
+}
+
+.accordion-header[aria-expanded="false"] .about-icon-up {
+  display: none;
+}
+
+.accordion-header[aria-expanded="false"] .about-icon-down {
+  display: block;
+}
+
+#about-me > .ac-panel.accordion-content {
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  display: none;
+  padding-top: 12px;
+  padding-bottom: 20px;
+  transition-duration: 300ms;
+}
+
+.accordion-item.open .accordion-content {
+  display: block;
+}
+
+div.ac-panel.accordion-content > .ac-text {
+  color: #ffffff;
+  padding-top: 28px;
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding-right: 68px;
+  padding-top: 48px;
+  padding-bottom: 32px;
+}
+
+.accordion-content > .ac-text > .accordion-about-text {
+  margin-top: 32px;
+}
+
+.ac-text.accordion-role-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  list-style: none;
+  padding-top: 8px;
+  padding-right: 396px;
+  padding-bottom: 32px;
+}
+
+.ac-text.accordion-education-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  list-style: none;
+  padding-top: 8px;
+  padding-right: 396px;
+  padding-bottom: 32px;
+}
+
+.ac .ac-trigger::after {
+  content: none !important;
+}
+
+.ac-panel.accordion-content {
+  padding-top: 12px;
+  padding-bottom: 20px;
+}
+
+.ac .about-accordion-toggle.ac-trigger {
+  content: none;
+  color: transparent;
+}
+
+/* Swiper */
+
+.swiper-container-aboutme {
+  display: inline-block;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.skills-swiper-about-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  width: 260px;
+}
+
+.skills-list {
+  display: flex;
+  min-width: 0;
+  width: 260px;
+  user-select: none;
+}
+
+.skills-list-items {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  display: block;
+}
+
+.swiper-name-list-aboutme {
+  height: 130px;
+  display: flex;
+  border-radius: 100px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  justify-content: center;
+  align-items: center;
+}
+
+.chosen {
+  background-color: #ed3b44;
+  border-color: #ed3b44;
+}
+
+.skills-btm {
+  background-color: white;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.about-side-icon {
+  width: 28px;
+  height: 28px;
+  fill: none;
+  stroke: #3b3b3b;
+  transition: stroke 250ms ease;
+}
+
+.skills-btm:hover .about-side-icon {
+  stroke: #5c5c5c;
+}
+
+@media screen and (min-width: 768px) {
+  .about-me > .container {
+    padding: 0 32px;
+  }
+
+  .discr-card {
+    width: 704px;
+    height: 700px;
+    max-width: none;
+    max-height: none;
+    padding: 64px;
+  }
+  .discr-card-img {
+    width: 704px;
+    height: 700px;
+    max-width: none;
+    max-height: none;
+  }
+  .discr-text {
+    font-size: 38px;
+    line-height: 105%;
+    width: 576px;
+    max-width: none;
+    /* margin-top: 64px;
+        margin-left: 64px;
+        margin-right: 64px; */
+  }
+
+  .discr-img {
+    max-width: 704px;
+    width: 704px;
+  }
+
+  ul.accordion-container.accordion-list {
+    width: 704px;
+    max-width: none;
+    /* padding-top: 44px;
+        padding-bottom: 64px; */
+    margin-top: 64px;
+  }
+
+  .accordion-content > .ac-text > .accordion-about-text {
+    margin-top: 16px;
+  }
+
+  .swiper-container-aboutme {
+    margin-top: 64px;
+  }
+
+  .skills-swiper-about-me {
+    width: 600px;
+    margin-top: 0;
+  }
+
+  .swiper-name-list-aboutme {
+    height: 200px;
+    width: 200px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about-me {
+    padding-top: 96px;
+  }
+
+  .about-me-discr {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .discr-card {
+    max-width: 680px;
+  }
+  .discr-card-img {
+    max-width: 680px;
+  }
+  .discr-text {
+    max-width: 552px;
+  }
+
+  .discr-img {
+    max-width: 680px;
+  }
+
+  ul.accordion-container.accordion-list {
+    max-width: 1376px;
+    width: 100%;
+    /* padding-top: 64px;
+        padding-bottom: 96px; */
+    margin-top: 96px;
+  }
+
+  li.ac.accordion-item {
+    padding-top: 32px;
+    padding-bottom: 0;
+  }
+
+  .about-svg-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .ac-panel.accordion-content {
+    width: 612px;
+    margin-left: 696px;
+    padding-top: 0px;
+    padding-bottom: 32px;
+  }
+
+  .accordion-content > .ac-text > .accordion-about-text {
+    margin-top: 32px;
+  }
+
+  .swiper-container-aboutme {
+    display: flex;
+    gap: 72px;
+    align-items: center;
+    margin-top: 96px;
+    padding: 0 32px;
+  }
+
+  .skills-swiper-about-me {
+    width: 1200px;
+  }
+}
