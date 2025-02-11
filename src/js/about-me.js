@@ -72,4 +72,3 @@ new Accordion('.accordion-list', {
   showMultiple: true,
   openOnInit: [0],
 });
-ggg;
