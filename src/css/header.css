@@ -259,14 +259,8 @@
   background-color: #e0373f;
 }
 /* Close menu Button link*/
-
 /* Open Adaptability */
-@media (max-width: 768px) {
-  .header-menu-btn,
-  .header-order-btn {
-    display: none;
-  }
-}
+
 @media (min-width: 768px) {
   .header-mobile-menu-btn {
     display: none;
