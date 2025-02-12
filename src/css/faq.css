@@ -41,7 +41,10 @@
   max-width: 80%;
   margin: 0;
 }
+.down{
 
+  border-bottom: 1px solid #fafafa33;
+}
 .btn-faq {
   border-radius: 100px;
   background-color: #1c1d20;
