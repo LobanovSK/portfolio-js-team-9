@@ -25,10 +25,7 @@
 
 .discr-card {
   border-radius: 24px;
-  max-width: 552px;
-  max-height: 200px;
   width: 100%;
-  height: calc((100vw * 1.418) - 32px);
   background: #242527;
   padding: 32px;
 }
@@ -56,7 +53,6 @@
 }
 
 .discr-text .one-line {
-  white-space: nowrap;
 }
 
 .discr-text .one-line > .accent-first {
@@ -79,7 +75,6 @@
 
 ul.accordion-container.accordion-list {
   max-width: 1000px;
-  width: 1000px;
   height: auto;
   list-style: none;
   padding: 0;
@@ -98,7 +93,7 @@ li.ac.accordion-item {
 }
 
 h2.ac-header.accordion-header {
-  font-family: "Inter Tight", sans-serif;
+  font-family: 'Inter Tight', sans-serif;
   font-weight: 600;
   line-height: 1.5;
   letter-spacing: -0.02em;
@@ -161,19 +156,19 @@ button.ac-trigger.about-accordion-toggle {
   display: block;
 }
 
-.accordion-header[aria-expanded="true"] .about-icon-up {
+.accordion-header[aria-expanded='true'] .about-icon-up {
   display: block;
 }
 
-.accordion-header[aria-expanded="true"] .about-icon-down {
+.accordion-header[aria-expanded='true'] .about-icon-down {
   display: none;
 }
 
-.accordion-header[aria-expanded="false"] .about-icon-up {
+.accordion-header[aria-expanded='false'] .about-icon-up {
   display: none;
 }
 
-.accordion-header[aria-expanded="false"] .about-icon-down {
+.accordion-header[aria-expanded='false'] .about-icon-down {
   display: block;
 }
 
@@ -195,7 +190,7 @@ button.ac-trigger.about-accordion-toggle {
 div.ac-panel.accordion-content > .ac-text {
   color: #ffffff;
   padding-top: 28px;
-  font-family: "Inter Tight", sans-serif;
+  font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-size: 16px;
   padding-right: 68px;
