@@ -260,7 +260,12 @@
 }
 /* Close menu Button link*/
 /* Open Adaptability */
-
+@media (max-width: 767px) {
+  .header-menu-btn,
+  .header-order-btn {
+    display: none;
+  }
+}
 @media (min-width: 768px) {
   .header-mobile-menu-btn {
     display: none;
