@@ -12,7 +12,7 @@
 }
 /* --------------Covers-Section--------------------------- */
 .covers-section {
-  max-width: 375px;
+  /* max-width: 375px; */
   height: 508px;
   margin-left: auto;
   margin-right: auto;
@@ -72,7 +72,7 @@
 /* ---------------------------------------- */
 @media screen and (min-width: 768px) {
   .covers-section {
-    max-width: 768px;
+    /* max-width: 768px; */
     height: 960px;
     background-image: url(/img/covers-img/bg-balls-tablet.png);
   }
@@ -105,7 +105,7 @@
 }
 @media screen and (min-width: 1440px) {
   .covers-section {
-    max-width: 1439px;
+    /* max-width: 1439px; */
     background-image: url(/img/covers-img/bg-balls-desktop.png);
   }
   @media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
