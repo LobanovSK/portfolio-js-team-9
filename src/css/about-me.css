@@ -52,10 +52,6 @@
     margin-right: 32px; */
 }
 
-.discr-text .one-line {
-  /* white-space: nowrap; */
-}
-
 .discr-text .one-line > .accent-first {
   color: #ed3b44;
 }
@@ -78,8 +74,6 @@ ul.accordion-container.accordion-list {
   height: auto;
   list-style: none;
   padding: 0;
-  /* padding-top: 12px;
-    padding-bottom: 32px; */
   margin-top: 32px;
 }
 
@@ -357,12 +351,10 @@ div.ac-panel.accordion-content > .ac-text {
   ul.accordion-container.accordion-list {
     width: 704px;
     max-width: none;
-    /* padding-top: 44px;
-        padding-bottom: 64px; */
     margin-top: 64px;
   }
 
-  .accordion-content > .ac-text p{
+  .accordion-content > .ac-text p {
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
@@ -452,19 +444,16 @@ div.ac-panel.accordion-content > .ac-text {
   }
 }
 
-
 @media screen and (min-width: 375px) {
   .swiper-container-aboutme {
     margin-top: 64px;
     display: flex;
   }
 
-  .accordion-content > .ac-text p{
+  .accordion-content > .ac-text p {
     font-size: 15px;
     line-height: 24px;
     font-weight: 500;
     text-align: left;
   }
-
-
 }
