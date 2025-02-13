@@ -5,9 +5,13 @@
     background-color: #1c1d20;
     font-size: 14px;
     margin: 0;
-    padding: 0;
+    padding: 56px 0 0 0;
   }
-  
+  .projects-container{
+      max-width: 375px;
+      margin: 0 auto;
+      padding: 0 16px;
+  }
   .projects_visually-hidden {
     position: absolute;
     width: 1px;
@@ -41,7 +45,6 @@
   
   .projects_swiper-wrapper {
     height: 812px;
-    margin-top: 56px;
     position: relative;
     width: 100%;
     z-index: 1;
@@ -61,6 +64,7 @@
     height: 417px;
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
+    padding: 32px;
   }
   .projects_swiper-slide img {
     display: block;
@@ -113,8 +117,8 @@
     padding: 0;
     margin: 0;
     gap: 6px;
-    margin: 32px 32px 96px 32px;
     flex-wrap: wrap;
+    margin-bottom: 96px;
   }
   .projects_lang-list-part {
     color: #1c1d20;
@@ -137,7 +141,6 @@
   }
   .projects_content {
     text-align: left;
-    margin-left: 32px;
   }
   
   .projects_swaper-text {
@@ -149,7 +152,7 @@
     color: #1c1d20;
     width: 279px;
     text-align: left;
-    margin-bottom: 32px;
+    margin-bottom: 34px;
   }
   
   .See_projects-button {
@@ -158,6 +161,9 @@
     border-radius: 60px;
     border: 0;
     color: #fafafa; 
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: -0.02em;
   }
   .See_projects-button:hover {
     background-color: #e0373f;
@@ -198,12 +204,15 @@
   @media screen and (min-width: 768px) {
     .projects_swiper-wrapper {
       height: 1191px;
-      margin-bottom: 64px;
-      margin-top: 56px;
+    }
+    .projects-container{
+      max-width: 768px;
+      padding: 0 32px;
     }
     .projects_swaper-first-part {
       width: 704px;
       height: 566px;
+      padding: 64px;
     }
     .projects_swaper-second-part {
       width: 704px;
@@ -219,8 +228,8 @@
       display: flex;
       width: 312px;
       gap: 6px;
-      margin: 64px 0 164px 64px;
       flex-wrap: nowrap;
+      margin-bottom: 164px;
     }
     .projects-content {
       margin-left: 64px;
@@ -231,12 +240,12 @@
       width: 494px;
     }
     .See_projects-button {
-      margin: 6px 367px 0 0;
       padding: 18px 50px ;
+      letter-spacing: -0.02em;
       }
     .projects_arrows {
       gap: 20px;
-      margin-top: 32px;
+      margin-top: 64px;
     }
     .projects_arrow{
       width: 32px;
@@ -251,9 +260,10 @@
   @media screen and (min-width: 1440px) {
     .projects_swiper-wrapper {
       height: 625px;
-      margin-top: 56px;
-      margin-bottom: 64px;
     }
+    .projects-container{
+      max-width: 1440px;
+   }
     .projects_swiper-slide {
       flex-direction: row;
     }
@@ -281,20 +291,13 @@
       display: flex;
       width: 312px;
       gap: 6px;
-      margin: 64px 0 164px 64px;
       flex-wrap: nowrap;
-    }
-    .projects_content {
-      margin-left: 64px;
+      margin-bottom: 223px;
     }
     .projects_swaper-text {
       font-size: 44px;
       line-height: 100%;
       width: 494px;
-    }
-    .See_projects-button {
-      margin: 6px 367px 0 0;
-    }
-    
+    }    
   }
   
