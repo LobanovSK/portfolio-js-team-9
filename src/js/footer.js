@@ -13,7 +13,8 @@ if (input) {
     }
   });
 }
-// Запит при submit
+
+// Пошук елементів
 const footerFormEl = document.querySelector('.footer-form');
 const inputEmailEl = document.querySelector('.footer-form-input.email');
 const inputCommentEl = document.querySelector('.footer-form-input.comment');
@@ -22,6 +23,7 @@ const modalCloseBtnEl = document.querySelector('.footer-modal-close-btn');
 const modalTitleEl = document.querySelector('.footer-modal-title');
 const modalTextEl = document.querySelector('.footer-modal-text');
 
+// Функція для обробки події submit форми
 const handleSubmit = async event => {
   event.preventDefault();
   const userEmail = inputEmailEl.value.trim();
@@ -29,36 +31,49 @@ const handleSubmit = async event => {
 
   try {
     await axios.post('https://portfolio-js.b.goit.study/api/requests', {
-      email: `${userEmail}`,
-      comment: `${userComment}`,
+      email: userEmail,
+      comment: userComment,
     });
     inputEmailEl.value = '';
     inputCommentEl.value = '';
-    backdropEl.classList.add('is-open');
+    openModal();
   } catch (err) {
     modalTitleEl.classList.add('footer-error-title');
     modalTitleEl.textContent = 'Error!';
     modalTextEl.classList.add('footer-error-text');
     modalTextEl.textContent =
       'There was an error submitting your form. Please check the entered data and try again.';
-
-    backdropEl.classList.add('is-open');
+    openModal();
   }
 };
 
+// Додаємо слухач події submit до форми
 footerFormEl.addEventListener('submit', handleSubmit);
-modalCloseBtnEl.addEventListener('click', () => {
-  backdropEl.classList.remove('is-open');
-});
 
-document.addEventListener('keydown', event => {
+// Функція-обробник для події keydown (Escape)
+const handleEscapeKey = event => {
   if (event.key === 'Escape' || event.code === 'Escape') {
-    backdropEl.classList.remove('is-open');
+    closeModal();
   }
-});
+};
+
+// Відкриття модального вікна
+const openModal = () => {
+  backdropEl.classList.add('is-open');
+  document.addEventListener('keydown', handleEscapeKey);
+};
+
+// Закриття модального вікна
+const closeModal = () => {
+  backdropEl.classList.remove('is-open');
+  document.removeEventListener('keydown', handleEscapeKey);
+};
+
+// Додаємо слухачі для закриття модального вікна
+modalCloseBtnEl.addEventListener('click', closeModal);
 
 backdropEl.addEventListener('click', event => {
   if (event.target === backdropEl) {
-    backdropEl.classList.remove('is-open');
+    closeModal();
   }
 });
