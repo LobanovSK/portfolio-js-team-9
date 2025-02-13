@@ -49,10 +49,6 @@
   /* margin-top: 32px;
     margin-left: 32px;
     margin-right: 32px; */
-  padding-right: 30px;
-}
-
-.discr-text .one-line {
 }
 
 .discr-text .one-line > .accent-first {
@@ -322,10 +318,6 @@ div.ac-panel.accordion-content > .ac-text {
 }
 
 @media screen and (min-width: 768px) {
-  .about-me > .container {
-    padding: 0 32px;
-  }
-
   .discr-card {
     width: 704px;
     height: 700px;
