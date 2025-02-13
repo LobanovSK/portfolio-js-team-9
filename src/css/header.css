@@ -40,6 +40,10 @@
 .header-logo img {
   margin-right: 8px;
 }
+.header-logo-text {
+  letter-spacing: -0.02em;
+}
+
 .header-mobile-menu-btn {
   background-color: transparent;
   border: none;
