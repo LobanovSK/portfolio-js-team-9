@@ -60,12 +60,14 @@ const handleEscapeKey = event => {
 // Відкриття модального вікна
 const openModal = () => {
   backdropEl.classList.add('is-open');
+  document.body.style.overflow = 'hidden';
   document.addEventListener('keydown', handleEscapeKey);
 };
 
 // Закриття модального вікна
 const closeModal = () => {
   backdropEl.classList.remove('is-open');
+  document.body.style.overflow = '';
   document.removeEventListener('keydown', handleEscapeKey);
 };
 

@@ -241,7 +241,7 @@ div.ac-panel.accordion-content > .ac-text {
 /* Swiper */
 
 .swiper-container-aboutme {
-  display: inline-block;
+  display: flex;
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: nowrap;
