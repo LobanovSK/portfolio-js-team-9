@@ -4,14 +4,10 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 /* ----------FOOTER-MOBILE----------- */
 
 .page-footer {
-  padding: 32px 0;
+  padding: 122px 0 32px;
   background: url('/img/footer/footer-glass-effect-mobile.png') no-repeat right
       center,
     #1c1d20;
@@ -178,7 +174,7 @@ html {
 
 @media screen and (min-width: 768px) {
   .page-footer {
-    padding-top: 80px;
+    padding-top: 60px;
     padding-bottom: 169px;
     background: url('/img/footer/footer-glass-effect-tablet.png') no-repeat
         right center,
