@@ -27,7 +27,6 @@
   height: 500px;
   border-radius: 24px;
   width: 100%;
-  height: calc((100vw * 1.418) - 32px);
   background: #242527;
   padding: 32px;
 }
@@ -239,7 +238,7 @@ div.ac-panel.accordion-content > .ac-text {
 /* Swiper */
 
 .swiper-container-aboutme {
-  display: inline-block;
+  display: flex;
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -316,10 +315,6 @@ div.ac-panel.accordion-content > .ac-text {
 }
 
 @media screen and (min-width: 768px) {
-  .about-me > .container {
-    padding: 0 32px;
-  }
-
   .discr-card {
     width: 704px;
     height: 700px;

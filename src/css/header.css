@@ -40,6 +40,10 @@
 .header-logo img {
   margin-right: 8px;
 }
+.header-logo-text {
+  letter-spacing: -0.02em;
+}
+
 .header-mobile-menu-btn {
   background-color: transparent;
   border: none;
@@ -60,12 +64,18 @@
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s ease, visibility 0.3s ease;
+
+  background-image: url('/img/header-modal-window-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
 .header-mobile-menu-overlay.is-open {
   visibility: visible;
   opacity: 1;
 }
-.header-mobile-menu-overlay::before {
+/* .header-mobile-menu-overlay::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -77,7 +87,7 @@
   );
   transform: rotate(-180deg);
   z-index: -1;
-}
+} */
 
 .header-mobile-menu {
   display: flex;
@@ -259,9 +269,8 @@
   background-color: #e0373f;
 }
 /* Close menu Button link*/
-
 /* Open Adaptability */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .header-menu-btn,
   .header-order-btn {
     display: none;

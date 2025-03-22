@@ -10,15 +10,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
   headerOpenMenuBtn.addEventListener('click', () => {
     headerMenuOverlay.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
   });
 
   headerCloseMenuBtn.addEventListener('click', () => {
     headerMenuOverlay.classList.remove('is-open');
+    document.body.style.overflow = '';
   });
 
   headerMenuLinks.forEach(link => {
     link.addEventListener('click', () => {
       headerMenuOverlay.classList.remove('is-open');
+      document.body.style.overflow = '';
     });
   });
 });
